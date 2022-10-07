@@ -44,13 +44,12 @@
 *********************************************************************/
 
 
-// Our master array of Halloween words.  Note how it is declared as a CONST. Thats because we dont want anything changing these values
-const allWords = ["Costumes", "Monster", "Disguise", "Ghost", "Witch", "Pumpkin", "Candle", "Zombie", "Frankenstein", "October", "Scarecrow", "Pirate", "Crow", "Cat", "Broomstick", "Vampire", "Prince", "Princess", "Candy", "Werewolf", "Mask", "Spell", "Goblin", "Ghoul", "Alien", "Mummy", "Spooky", "Creepy", "Slimy", "Fangs", "Blood", "Skeleton", "Graveyard", "Party", "Screaming", "Bats", "Skull", "Wicked", "Scary"];
+const allWords = ["Costumes", "Monster", "Disguise", "Ghost", "Witch", "Pumpkin", "Candle", "Zombie", "Frankenstein", "October", "Scarecrow", "Pirate", "Crow", "Cat", "Broomstick", "Vampire", "Prince", "Princess", "Candy", "Werewolf", "Mask", "Spell", "Goblin", "Ghoul", "Alien", "Mummy", "Spooky", "Creepy", "Slimy", "Fangs", "Blood", "Skeleton", "Graveyard", "Party", "Screaming", "Bats", "Skull", "Wicked", "Scary"]; 
 
 
 //Select a random word from the "allWords" array and assign it to a variable called "selectedWord"
 let randomIndex = Math.floor(Math.random() * (allWords.length - 1)); //Don't worry about this math, but it will select a random number between 0 and the last index of the allWords array.
-let selectedWord = allWords[randomIndex]; // Use that random index in allWords and set that to a new variable that will hold our selectedWord.
+let selectedWord = allWords[randomIndex].toUpperCase() // Use that random index in allWords and set that to a new variable that will hold our selectedWord.
 
 
 //Scramble the selectedWord and display it inside of a div called "scrambledWord"
