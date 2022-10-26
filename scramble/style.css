@@ -1,4 +1,35 @@
 html, body {
   height: 100%;
   width: 100%;
+  text-align:center;
 }
+
+button{
+  text-align:center;
+}
+
+#myWord{
+  text-align:center;
+}
+
+#scrambledWord{
+  text-align:center;
+}
+
+#check(){
+  color:#008000 
+}
+
+#giveUp(){
+  color:#800040 
+}
+
+ body {
+  background:#ffffff;
+  background-image: url (https://replit.com/@reginanyx/Halloween-Scramble#black-silhouette-bats-isolated-transparent-background_87521-3246.webp)
+background-size:cover
+}
+
+
+
+
